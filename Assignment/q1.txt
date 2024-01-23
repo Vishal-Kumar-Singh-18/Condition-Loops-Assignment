@@ -1,0 +1,76 @@
+Q1. What are conditional statements? Explain conditional statements with syntax and examples.
+
+sol- Conditional statements in programming are used to make decisions in the code based on certain conditions. They allow you to control the flow of your program by executing different blocks of code depending on whether a specified condition evaluates to true or false. In JavaScript, there are primarily two types of conditional statements: `if` statements and `switch` statements.
+
+### 1. `if` Statements:
+
+The basic syntax for an `if` statement is as follows:
+
+if (condition) {
+    // code to be executed if the condition is true
+} else {
+    // code to be executed if the condition is false
+}
+
+Example:
+
+let temperature = 25;
+
+if (temperature > 30) {
+    console.log("It's a hot day!");
+} else {
+    console.log("It's a moderate or cool day.");
+}
+
+In this example, the code inside the `if` block will be executed if the temperature is greater than 30, otherwise, the code inside the `else` block will be executed.
+
+### 2. `else if` Statements:
+
+You can use `else if` statements to check multiple conditions in a sequence. Here's an example:
+
+let hour = 15;
+
+if (hour < 12) {
+    console.log("Good morning!");
+} else if (hour < 18) {
+    console.log("Good afternoon!");
+} else {
+    console.log("Good evening!");
+}
+
+
+### 3. `switch` Statements:
+
+`switch` statements provide an alternative way to handle multiple conditions. The basic syntax is as follows:
+
+switch (expression) {
+    case value1:
+        // code to be executed if expression equals value1
+        break;
+    case value2:
+        // code to be executed if expression equals value2
+        break;
+    // more cases...
+    default:
+        // code to be executed if none of the cases match
+}
+
+
+Here's an example:
+
+let day = "Wednesday";
+
+switch (day) {
+    case "Monday":
+        console.log("It's the start of the week.");
+        break;
+    case "Wednesday":
+        console.log("It's the middle of the week.");
+        break;
+    default:
+        console.log("It's some other day.");
+}
+
+In this example, the code inside the corresponding `case` block will be executed based on the value of the `day` variable.
+
+Conditional statements are crucial for building dynamic and responsive programs by allowing the execution of different code paths based on specific conditions.

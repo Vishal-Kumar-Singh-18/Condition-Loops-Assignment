@@ -1,0 +1,79 @@
+Q3. What are loops, and what do we need them? Explain different types of loops with their syntax and examples.
+
+sol- Loops in programming are used to repeatedly execute a block of code as long as a certain condition is true. They are essential for tasks that require repetitive operations, such as iterating over arrays, processing data, or performing calculations. JavaScript provides several types of loops, including the `for` loop, `while` loop, and `do-while` loop.
+
+### 1. `for` Loop:
+
+The `for` loop is often used when you know in advance how many times you want to iterate. It has the following syntax:
+
+for (initialization; condition; iteration) {
+    // code to be executed in each iteration
+}
+
+Here's an example that prints numbers from 1 to 5:
+
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+This loop initializes `i` to 1, checks if `i` is less than or equal to 5, executes the code inside the loop, and increments `i` in each iteration.
+
+### 2. `while` Loop:
+
+The `while` loop is used when the number of iterations is not known in advance and depends on a condition. Its syntax is as follows:
+
+while (condition) {
+    // code to be executed as long as the condition is true
+}
+
+Example:
+
+let count = 1;
+
+while (count <= 5) {
+    console.log(count);
+    count++;
+}
+
+This loop will print numbers from 1 to 5. The condition is checked before each iteration, and the loop continues as long as the condition is true.
+
+### 3. `do-while` Loop:
+
+The `do-while` loop is similar to the `while` loop, but it guarantees that the code block is executed at least once, as the condition is checked after the loop body. Its syntax is:
+
+do {
+    // code to be executed
+} while (condition);
+
+Example:
+
+let number = 1;
+
+do {
+    console.log(number);
+    number++;
+} while (number <= 5);
+
+### Loop Control Statements:
+
+JavaScript provides loop control statements like `break` and `continue`:
+
+- `break`: Terminates the loop prematurely.
+
+    for (let i = 1; i <= 5; i++) {
+        if (i === 3) {
+            break; // exit the loop when i is 3
+        }
+        console.log(i);
+    }
+
+- `continue`: Skips the rest of the code inside the loop for the current iteration.
+
+    for (let i = 1; i <= 5; i++) {
+        if (i === 3) {
+            continue; // skip the iteration when i is 3
+        }
+        console.log(i);
+    }
+   
+Loops are fundamental for automating repetitive tasks and processing collections of data, making them a crucial part of programming. Each type of loop in JavaScript serves a different purpose, allowing flexibility in handling various scenarios.
